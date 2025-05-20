@@ -3,5 +3,5 @@ build-job:
   script:
     - echo "Hello, $GITLAB_USER_LOGIN!"
     - echo "Running..."
-    - sleep 101
+    - sleep 102
     - echo "Finished!"
