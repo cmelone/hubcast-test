@@ -1,3 +1,4 @@
 Repo:
   owner: cmelone
   name: hubcast-test
+  sync_drafts: False
