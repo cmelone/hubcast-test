@@ -5,3 +5,11 @@ build-job:
     - echo "Running..."
     - sleep 5
     - echo "Finished!"
+
+test-job:
+  stage: test
+  script:
+    - echo "Hello, $GITLAB_USER_LOGIN!"
+    - echo "Running..."
+    - sleep 5
+    - echo "Finished!"
