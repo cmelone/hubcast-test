@@ -3,3 +3,4 @@ Repo:
   dest_name: hubcast-test
   draft_sync: True
   draft_sync_msg: False
+  create_mr: True
