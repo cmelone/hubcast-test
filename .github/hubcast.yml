@@ -1,5 +1,5 @@
-Repoe:
-  dest_org: caetano
+Repo:
+  deest_org: caetano
   dest_name: hubcast-test
   draft_sync: True
   draft_sync_msg: False
