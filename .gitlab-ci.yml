@@ -4,5 +4,5 @@ build-job:
     - echo "Hello, $GITLAB_USER_LOGIN!"
     - echo "Running..."
     - sleep 5
-#  rules:
-#    if: $CI_PIPELINE_SOURCE == "merge_request_event" || $CI_BRANCH == "main"
+  rules:
+    if: $CI_PIPELINE_SOURCE == "merge_request_event"
