@@ -6,3 +6,4 @@ build-job:
     - sleep 5
   rules:
     if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
