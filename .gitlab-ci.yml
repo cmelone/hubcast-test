@@ -1,9 +1,11 @@
-build-job:
-  stage: build
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH
+
+hello:
   script:
-    - echo "Hello, $GITLAB_USER_LOGIN!"
-    - echo "Running..."
-    - sleep 5
-   - echo "Finished!"
-#  rules:
-#    if: $CI_PIPELINE_SOURCE == "merge_request_event" || $CI_BRANCH == "main"
+    - echo "hello world"
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH
