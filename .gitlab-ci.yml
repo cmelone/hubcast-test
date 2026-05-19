@@ -11,6 +11,7 @@ build-job4:
     - echo "Hello, $GITLAB_USER_LOGIN!"
     - echo "Running..."
     - sleep 5
+    - exit 4
     - echo "Finished!"
 build-job3:
   stage: build
