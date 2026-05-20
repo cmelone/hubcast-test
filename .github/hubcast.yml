@@ -4,4 +4,6 @@ Repo:
   draft_sync: True
   draft_sync_msg: False
   create_mr: True
-  check_types: ["pipeline, jobs"]
+  check_types:
+    - pipeline
+    - jobs
