@@ -1,5 +1,5 @@
 build-job:
-  stage: caetano
+  stage: test
   script:
     - echo "Hello, $GITLAB_USER_LOGIN!"
     - echo "Running..."
