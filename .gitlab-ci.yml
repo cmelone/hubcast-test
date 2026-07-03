@@ -1,11 +1,20 @@
-build-job:
-  stage: test
-  script:
-    - echo "Hello, $GITLAB_USER_LOGIN!"
-    - exit 111
-    - echo "Running..."
-    - sleep 5
-    - echo "Finished!"
-  allow_failure: true
+#build-job:
+#  stage: test
+#  script:
+#    - echo "Hello, $GITLAB_USER_LOGIN!"
+#    - exit 111
+#    - echo "Running..."
+#    - sleep 5
+#    - echo "Finished!"
+#  allow_failure: true
 #  rules:
 #    if: $CI_PIPELINE_SOURCE == "merge_request_event" || $CI_BRANCH == "main"
+#
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"
+
+build:
+  stage: build
+  script:
+    - echo "this job never gets evaluated"
