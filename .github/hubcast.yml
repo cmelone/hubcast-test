@@ -6,4 +6,3 @@ Repo:
   create_mr: True
   check_types: ["pipeline", "jobs"]
 
-
