@@ -5,4 +5,3 @@ Repo:
   draft_sync_msg: False
   create_mr: True
   check_types: ["pipeline", "jobs"]
-
