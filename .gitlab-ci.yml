@@ -10,11 +10,12 @@
 #  rules:
 #    if: $CI_PIPELINE_SOURCE == "merge_request_event" || $CI_BRANCH == "main"
 #
-workflow:
-  rules:
-    - if: $CI_PIPELINE_SOURCE == "push"
+#workflow#:
+#  rules:
+#    - if: $CI_PIPELINE_SOURCE == "push"
 
 build:
   stage: build
   script:
     - echo "this job never gets evaluated"
+    - fail
